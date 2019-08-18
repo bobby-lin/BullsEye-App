@@ -13,6 +13,7 @@
 		30039FCB23094C3600E8D44B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30039FCA23094C3600E8D44B /* Assets.xcassets */; };
 		30039FCE23094C3600E8D44B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30039FCC23094C3600E8D44B /* LaunchScreen.storyboard */; };
 		30D982392309AB7100136635 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D982382309AB7100136635 /* AboutViewController.swift */; };
+		30D9823B2309B0B000136635 /* AboutAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D9823A2309B0B000136635 /* AboutAuthorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		30039FCD23094C3600E8D44B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30039FCF23094C3600E8D44B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30D982382309AB7100136635 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		30D9823A2309B0B000136635 /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		30039FC223094C3400E8D44B /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				30D9823A2309B0B000136635 /* AboutAuthorViewController.swift */,
 				30039FC323094C3400E8D44B /* AppDelegate.swift */,
 				30D982382309AB7100136635 /* AboutViewController.swift */,
 				30039FC723094C3400E8D44B /* Main.storyboard */,
@@ -141,6 +144,7 @@
 				30D982392309AB7100136635 /* AboutViewController.swift in Sources */,
 				30039FC623094C3400E8D44B /* ViewController.swift in Sources */,
 				30039FC423094C3400E8D44B /* AppDelegate.swift in Sources */,
+				30D9823B2309B0B000136635 /* AboutAuthorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
