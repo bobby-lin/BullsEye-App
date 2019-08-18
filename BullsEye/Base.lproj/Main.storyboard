@@ -30,6 +30,9 @@
                                 <rect key="frame" x="44" y="228" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="resetGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="GcL-Fb-TKI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ml-Sw-ZEs">
                                 <rect key="frame" x="113" y="41" width="324" height="30"/>
@@ -95,12 +98,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWc-Vj-aMK">
                                 <rect key="frame" x="471" y="232" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="LTb-y1-lxt" kind="presentation" modalTransitionStyle="flipHorizontal" id="hPg-CY-6fY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="G1q-AJ-eZ4" id="nQP-Fu-3jL"/>
+                        <outlet property="scoreLabel" destination="C4t-dc-FZI" id="llN-7X-yYF"/>
                         <outlet property="slider" destination="J8w-jH-rgj" id="0D8-Jw-afC"/>
                         <outlet property="targetLabel" destination="qhq-eL-Vv9" id="CK4-vc-0ID"/>
                     </connections>
@@ -108,6 +116,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.859154929577464" y="93.75"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="Sca-Fi-mrD">
+            <objects>
+                <viewController id="LTb-y1-lxt" customClass="AboutViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EVQ-9K-mhz">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xn2-Kl-oZl">
+                                <rect key="frame" x="265" y="263" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="close" destination="LTb-y1-lxt" eventType="touchUpInside" id="ZoQ-wg-UC7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="489-5T-uKe">
+                                <rect key="frame" x="57" y="40" width="449" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">*** Bull’s Eye ***
+
+Welcome to the awesome game of Bull’s Eye where you can win points and fame by dragging a slider.
+
+Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dZb-ph-OVE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Z8-a9-Nri" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808.09859154929575" y="93.75"/>
         </scene>
     </scenes>
 </document>
